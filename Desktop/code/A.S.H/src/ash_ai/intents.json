@@ -1,0 +1,214 @@
+{
+      "intents": [
+            {
+                  "tag": "greeting",
+                  "patterns": [
+                        "hi",
+                        "hello",
+                        "hey",
+                        "how are you",
+                        "is anyone there?",
+                        "good day"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "hey :)",
+                              "hello , how can I help you",
+                              "hi there , what can i do for you"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "goodbye",
+                  "patterns":[
+                              "bye",
+                              "good bye",
+                              "see you later",
+                              "have a nice day"
+                        ],
+                  "responses": {
+                        "nutral": [
+                              "bye",
+                              "see you later",
+                              "take care",
+                              "see you soon"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "okay",
+                  "patterns": [
+                        "ok",
+                        "okay"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "ok"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "play a song",
+                  "patterns": [
+                        "play a song",
+                        "stop the music",
+                        "play song on youtube"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "okay ",
+                              "sure",
+                              "no proplem",
+                              "right away"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "open youtube",
+                  "patterns": [
+                        "play a video",
+                        "open youtube",
+                        "play video on youtube",
+                        "youtube dot com"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "okay ",
+                              "sure",
+                              "no proplem",
+                              "right away"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "google",
+                  "patterns": [
+                        "open google",
+                        "search google",
+                        "look for results for",
+                        "google dot com",
+                        "google something for me",
+                        "look up"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "okay ",
+                              "sure",
+                              "no proplem",
+                              "right away"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "daiary",
+                  "patterns": [
+                        "i went to school today",
+                        "linda visited us to day",
+                        "hey",
+                        "how are you",
+                        "is anyone there?",
+                        "today was a good day"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "save-to-diry"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            },
+            {
+                  "tag": "todo",
+                  "patterns": [
+                        "put coding in my todo list",
+                        "add it tomy to do list",
+                        "put it under todo",
+                        "to do ",
+                        "i will do it later"
+                  ],
+                  "responses": {
+                        "nutral": [
+                              "todo"
+                        ],
+                        "happy": [],
+                        "sad": [],
+                        "scared": [],
+                        "tiredness": [],
+                        "discusted": [],
+                        "anger": [],
+                        "awkwardness": [],
+                        "boredom": [],
+                        "embressed": [],
+                        "greatful": []
+                  }
+            }
+      ]
+}

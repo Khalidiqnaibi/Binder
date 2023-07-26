@@ -1,0 +1,182 @@
+{
+      "intents": [
+            {
+                  "tag": "happy",
+                  "patterns": [
+                        "i am happy",
+                        "very nice weather",
+                        "cheer up",
+                        "dancing and singing",
+                        "rainbows and batterflys",
+                        "chilling",
+                        "sweet life",
+                        "not sad",
+                        "life is beutiful",
+                        "that is so cool",
+                        "sun shine",
+                        "nice to meet you",
+                        "whish you the best",
+                        "love",
+                        "amazing",
+                        "cool",
+                        "intresting",
+                        "i love playing video games"
+                  ]
+            },
+            {
+                  "tag": "sad",
+                  "patterns": [
+                        "i am sad",
+                        "i’m not proud of my performance",
+                        "very bad weather",
+                        "crying",
+                        "alone",
+                        "raining and cloudy",
+                        "not cool",
+                        "sawer life",
+                        "not happy",
+                        "life is awful",
+                        "im sad",
+                        "im too stupid",
+                        "i want to die",
+                        "suicide",
+                        "lost",
+                        "no point in staying alive"
+                  ]
+            },
+            {
+                  "tag": "hopeful",
+                  "patterns": [
+                        "i am hopeful",
+                        "I need to mention the time I went",
+                        "i swear a cat would fix all of my problems in life"
+                  ]
+            },
+            {
+                  "tag": "nostalgia",
+                  "patterns": [
+                        "i am nostalgic",
+                        "I need to mention the time I went"
+                  ]
+            },
+            {
+                  "tag": "scared",
+                  "patterns": [
+                        "i am scared",
+                        "i am afreid",
+                        "screaming",
+                        "horoer",
+                        "running as fast as they can",
+                        "saw a very scary and big thing or lion",
+                        "my body took a screenshot",
+                        "jump scare",
+                        "life is awful",
+                        "im afraid",
+                        "im scared"
+                  ]
+            },
+            {
+                  "tag": "tiredness",
+                  "patterns": [
+                        "abdominal discomfort",
+                        "nausea",
+                        "headache",
+                        "snooze",
+                        "Therapeutic massage",
+                        "insomnia",
+                        "chemotherapy's effect",
+                        "muscle aches",
+                        "sleeping",
+                        "Tired"
+                  ]
+            },
+            {
+                  "tag": "nutral",
+                  "patterns": [
+                        "are you an ai ?",
+                        "my name is",
+                        "normal",
+                        "hi",
+                        "people can be diffrent",
+                        "how are you doing",
+                        "not good but not bad",
+                        "another normal day",
+                        "i am okay with that",
+                        "on the bus",
+                        "hello",
+                        "my name is khalid",
+                        "good morning",
+                        "linda is my sister"
+                  ]
+            },
+            {
+                  "tag": "discusted",
+                  "patterns": [
+                        "puke",
+                        "discuste me",
+                        "vomet",
+                        "yuyks",
+                        "yuk",
+                        "ew",
+                        "discusting"
+                  ]
+            },
+            {
+                  "tag": "anger",
+                  "patterns": [
+                        "eat shit",
+                        "fuck off",
+                        "fuck you",
+                        "go kill yoursilf",
+                        "im angry",
+                        "so angry",
+                        "i hate you",
+                        "you are stupid",
+                        "you dont do any thing right",
+                        "someone stole my phone today"
+                  ]
+            },
+            {
+                  "tag": "awkwardness",
+                  "patterns": [
+                        "clumsy",
+                        "committing oversights",
+                        "uncomfortable",
+                        "feel weird",
+                        "embarrassment",
+                        "distressing memories",
+                        "Awkward"
+                  ]
+            },
+            {
+                  "tag": "boredom",
+                  "patterns": [
+                        "lack of social interaction",
+                        "repetion",
+                        "nothing is changing",
+                        "routine",
+                        "bored"
+                  ]
+            },
+            {
+                  "tag": "embressed",
+                  "patterns": [
+                        "god damn",
+                        "wow",
+                        "really?",
+                        "omg",
+                        "oh my god",
+                        "embresseve",
+                        "on god?"
+                  ]
+            },
+            {
+                  "tag": "greatful",
+                  "patterns": [
+                        "thank you ",
+                        "thanks",
+                        "thank you for the kind words"
+                  ]
+            }
+      ]
+}

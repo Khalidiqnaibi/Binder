@@ -1,0 +1,113 @@
+{
+      "intents": [
+            {
+                  "tag": "name",
+                  "patterns": [
+                        "who is the person with id",
+                        "what is the name of the person with the id"
+                  ]
+            },
+            {
+                  "tag": "age",
+                  "patterns": [
+                        "who old is he",
+                        "years of age",
+                        "what is the age of afif sami iqnaibi",
+                        "is she old",
+                        "how old is that person"
+                  ]
+            },
+            {
+                  "tag": "blood_type",
+                  "patterns": [
+                        "what is his blood type",
+                        "her type of blood",
+                        "what is his blood type"
+                  ]
+            },
+            {
+                  "tag": "birthday",
+                  "patterns": [
+                        "when did that person was born"
+                  ]
+            },
+            {
+                  "tag": "other_info",
+                  "patterns": [
+                        "other info"
+                  ]
+            },
+            {
+                  "tag": "dadinfo",
+                  "patterns": [
+                        "tell me about this persons dad"
+                  ]
+            },
+            {
+                  "tag": "hobbies",
+                  "patterns": [
+                        "what dose he dose for fun"
+                  ]
+            },
+            {
+                  "tag": "iq",
+                  "patterns": [
+                        "how smart is he"
+                  ]
+            },
+            {
+                  "tag": "job",
+                  "patterns": [
+                        "what dose he do for a living"
+                  ]
+            },
+            {
+                  "tag": "mominfo",
+                  "patterns": [
+                        "tell me about this persons mom"
+                  ]
+            },
+            {
+                  "tag": "nicknames",
+                  "patterns": [
+                        "what is he known as"
+                  ]
+            },
+            {
+                  "tag": "pronounce",
+                  "patterns": [
+                        "what is this persons pronounce"
+                  ]
+            },
+            {
+                  "tag": "relationship to user",
+                  "patterns": [
+                        "what is this persons relationship to the user"
+                  ]
+            },
+            {
+                  "tag": "sex",
+                  "patterns": [
+                        "is this person a boy or a girl"
+                  ]
+            },
+            {
+                  "tag": "race",
+                  "patterns": [
+                        "what is this persons race"
+                  ]
+            },
+            {
+                  "tag": "weigh",
+                  "patterns": [
+                        "how much dose khalid weigh"
+                  ]
+            },
+            {
+                  "tag": "height",
+                  "patterns": [
+                        "how tall is khalid"
+                  ]
+            }
+      ]
+}
