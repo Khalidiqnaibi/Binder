@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment options</title>
+    <!-- Add your CSS styles or link external stylesheets here if needed -->
+    <style>
+        html{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        .plans-container {
+            justify-items: center;
+            justify-self: center;
+            margin: 0;
+            margin-top: 20px;
+            display:grid;
+            background: #535456;
+            width: 75%;
+            padding: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+            height: 75%;
+        }
+
+        .plan {
+            background: #D1D2D4;
+            padding: 20px;
+            margin: 20px;
+            height: 100%;
+            width: 65%;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .plan h2 {
+            color: #000000;
+        }
+
+        p {
+            color: #000000;
+        }
+
+        .plns{
+            display:grid;
+            justify-items: center;
+            background: #535456;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #titel{    
+            height: 5%;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .plan ul {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .plan li {
+            color: #000000;
+        }
+
+        .subscribe-button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #FFFFFF;
+            cursor: pointer;
+            border: 2px;
+            border-radius: 5px;
+        }
+
+        .actvbox{
+            justify-items: center;
+            margin-top: 10px;
+        }
+
+        input{
+            height: 20px;
+        }
+
+        #actvbtn{
+            height: 25px;
+            width: 50px;
+            padding-top: 5px;
+        }
+
+        .uppln {
+            height: 75%;
+        }
+    </style>
+</head>
+<body>
+  <div class="plns">
+   <!--h2 id="titel">sub plans</h2-->
+    <div class="plans-container">
+        <!-- pay optins -->
+        <div class="plan">
+            <div class="uppln">
+            <h2>Payment Using PayPal</h2>
+            <div></div>
+            </div>
+            <a href="http://127.0.0.1:5000/pay_basic"><button class="subscribe-button">PayPal</button></a>
+        </div>
+
+        <!-- Code -->
+        <div class="plan">
+            <h2>Activation Code:</h2>
+            <div class="actvbox">
+                <input id="activationCodeInput" placeholder="XXXX-XXXX-XXXX"/>
+                <button id="actvbtn" class="subscribe-button" onclick="checkActivationCode()">Pay</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script>
+    function checkActivationCode() {
+        var activationCode = document.getElementById('activationCodeInput').value;
+
+        // Use fetch to send a request to your Flask server to check the code
+        fetch('/check_bcode', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ code: activationCode }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Check the response data and redirect accordingly
+                if (data.result === 'accepted') {
+                    // Redirect to /pay_accepted
+                    window.location.href = '/basic_success';
+                } else {
+                    // Redirect to /pay_cancelled
+                    //window.location.href = '/basic_cancel';
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    }
+</script>
+</body>
+</html>
