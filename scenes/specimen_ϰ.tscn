@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://16g2v5bxyjk5"]
+
+[ext_resource type="PackedScene" uid="uid://cgt4bjnqv5oy5" path="res://scenes/scince.tscn" id="1_kuy7s"]
+[ext_resource type="Texture2D" uid="uid://dqa55i6rghd8m" path="res://assets/backgroung/download.jpg" id="1_y23qi"]
+[ext_resource type="PackedScene" uid="uid://by283u7ptv6un" path="res://scenes/tst.tscn" id="2_dyl36"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_6wued"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_d13ie"]
+distance = -1.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6vjdy"]
+normal = Vector2(0.999963, -0.0085467)
+distance = -157.001
+
+[node name="Specimen ϰ" type="Node2D"]
+position = Vector2(26, -18)
+
+[node name="Download2" type="Sprite2D" parent="."]
+position = Vector2(46, -125)
+scale = Vector2(2.21131, 2.21131)
+texture = ExtResource("1_y23qi")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_dyl36")]
+position = Vector2(-51, 15)
+scale = Vector2(0.664089, 0.664089)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(52, -122)
+zoom = Vector2(2.5, 2.5)
+limit_left = -205
+limit_top = -451
+limit_right = 365
+limit_bottom = 15
+
+[node name="scince" parent="." instance=ExtResource("1_kuy7s")]
+visible = false
+position = Vector2(-107, 15)
+
+[node name="Camera2D" type="Camera2D" parent="scince"]
+visible = false
+position = Vector2(52, -122)
+zoom = Vector2(2.5, 2.5)
+limit_left = -205
+limit_top = -241
+limit_right = 365
+limit_bottom = 200
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(216, 17)
+physics_material_override = SubResource("PhysicsMaterial_6wued")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_d13ie")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-25, -130)
+physics_material_override = SubResource("PhysicsMaterial_6wued")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-86, 27)
+shape = SubResource("WorldBoundaryShape2D_6vjdy")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(176, -58)
+rotation = 3.15121
+physics_material_override = SubResource("PhysicsMaterial_6wued")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(7.31704, 32.9312)
+shape = SubResource("WorldBoundaryShape2D_6vjdy")
