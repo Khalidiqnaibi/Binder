@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgt4bjnqv5oy5"]
+[gd_scene load_steps=6 format=3 uid="uid://cgt4bjnqv5oy5"]
 
 [ext_resource type="Script" path="res://scripts/movement.gd" id="1_ndf1f"]
 [ext_resource type="Texture2D" uid="uid://cgqu8pffrvj2t" path="res://assets/char/main/image.webp" id="2_hwnxr"]
+[ext_resource type="Shape2D" uid="uid://dwurjg5syn337" path="res://assets/collision/scinces.tres" id="3_28qvc"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jkcy5"]
 animations = [{
@@ -14,9 +15,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ifn2k"]
-radius = 27.0
-height = 90.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_kx05c"]
+radius = 27.0185
 
 [node name="scince" type="CharacterBody2D"]
 script = ExtResource("1_ndf1f")
@@ -31,6 +31,11 @@ position = Vector2(-1, -50.625)
 scale = Vector2(0.267078, 0.272911)
 sprite_frames = SubResource("SpriteFrames_jkcy5")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(9, -49)
-shape = SubResource("CapsuleShape2D_ifn2k")
+[node name="normal" type="CollisionShape2D" parent="."]
+position = Vector2(8, -51)
+shape = ExtResource("3_28qvc")
+
+[node name="roll" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(8, -37)
+shape = SubResource("CircleShape2D_kx05c")

@@ -11,14 +11,16 @@ var is_jmping= false
 
 func anime(anime_name:String):
 	$AnimatedSprite2D.play(anime_name)
-	#await $AnimatedSprite2D.animation_finished
+	await $AnimatedSprite2D.animation_looped
+	if $AnimatedSprite2D.animation_looped :
+		$AnimatedSprite2D.play("default")
 	#if is_on_floor():
 	#	$AnimatedSprite2D.play("default")
 
 func _ready():
 
 	# Ensure the default shape is active initially
-	anime("default")
+	$AnimatedSprite2D.play("default")
 	
 	set_collision_shape("normal")
 
@@ -36,9 +38,11 @@ func _physics_process(delta: float) -> void:
 
 	# Handle combat roll
 	if Input.is_action_just_pressed("roll") and not is_rolling:
-		anime("attk")
 		do_combat_roll()
-
+	
+	if Input.is_action_just_pressed("attks") and not is_rolling:
+		anime("attk")
+	
 	# Handle crouch
 	if Input.is_action_pressed("crouch"):
 		start_crouching()
@@ -46,6 +50,9 @@ func _physics_process(delta: float) -> void:
 		stop_crouching()
 
 	# Movement direction
+	if Input.is_action_just_released("left") or Input.is_action_just_released("right"):
+		$AnimatedSprite2D.play("default")
+		
 	var direction = Input.get_axis("left", "right")
 
 	# Adjust speed for crouching
@@ -56,7 +63,7 @@ func _physics_process(delta: float) -> void:
 	# Apply horizontal movement
 	if direction:
 		velocity.x = direction * current_speed
-		anime("run")
+		$AnimatedSprite2D.play("run")
 	else:
 		#anime("default")
 		

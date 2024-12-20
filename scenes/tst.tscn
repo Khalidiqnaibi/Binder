@@ -34,9 +34,6 @@ animations = [{
 }, {
 "duration": 0.21,
 "texture": ExtResource("6_wcov6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_qal4s")
 }],
 "loop": true,
 "name": &"attk",
@@ -74,30 +71,27 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.5,
+"duration": 2.5,
 "texture": ExtResource("13_a1xja")
 }, {
-"duration": 1.5,
+"duration": 2.5,
 "texture": ExtResource("14_kfnjy")
-}, {
-"duration": 1.5,
-"texture": ExtResource("1_xfyud")
 }],
 "loop": true,
 "name": &"jump",
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("4_o802o")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("16_51gbd")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("17_awuet")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("18_pm1y2")
 }],
 "loop": true,
@@ -121,7 +115,7 @@ texture = ExtResource("1_xfyud")
 position = Vector2(74, -113)
 scale = Vector2(0.566406, 0.566406)
 sprite_frames = SubResource("SpriteFrames_q54up")
-animation = &"jump"
+animation = &"attk"
 autoplay = "default"
 
 [node name="normal" type="CollisionShape2D" parent="."]
@@ -130,5 +124,5 @@ shape = ExtResource("3_ko8mb")
 
 [node name="roll" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2(73, -49)
+position = Vector2(73, -42)
 shape = SubResource("CircleShape2D_ejijj")
