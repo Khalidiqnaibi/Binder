@@ -9,6 +9,7 @@ var is_crouching = false
 var is_rolling = false
 var is_jmping= false
 
+
 func anime(anime_name:String):
 	$AnimatedSprite2D.play(anime_name)
 	await $AnimatedSprite2D.animation_looped
